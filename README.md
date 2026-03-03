@@ -27,7 +27,12 @@ CoMu
 ```
 
 # Data
-The structural data and multimodal features are stored in:
+Datasets are **not** included in this GitHub repository.
+
+Please download the structural data and multimodal features from:
+https://drive.google.com/drive/folders/1mjQbTu9Yse9i60sXddhH8ONt3GDH_wbJ?usp=sharing
+
+After downloading, place them in:
 `datasets/DB15K-tuning`, `datasets/MKG-W-tuning`, and `datasets/MKG-Y-tuning`.
 
 # Dependency
@@ -48,7 +53,7 @@ Or run a single dataset:
 python -u train.py --cuda 0 --lr 0.001 --eval_freq 25 --dim 200 --dataset DB15K-tuning --epochs 500 --lamda_l 1e-5 --lamda_g 1e-5
 ```
 
-Hyperparameters used in the main experiments:
+Hyperparameters used in `run.sh` (same as standalone commands below):
 
 **DB15K-tuning**
 ```sh
