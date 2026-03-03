@@ -30,7 +30,7 @@ CoMu
 Datasets are **not** included in this GitHub repository.
 
 Please download the structural data and multimodal features from:
-[Google Drive Dataset Folder](https://drive.google.com/drive/folders/1mjQbTu9Yse9i60sXddhH8ONt3GDH_wbJ?usp=sharing)
+[Google Drive](https://drive.google.com/drive/folders/1mjQbTu9Yse9i60sXddhH8ONt3GDH_wbJ?usp=sharing)
 
 After downloading, place them in:
 `datasets/DB15K-tuning`, `datasets/MKG-W-tuning`, and `datasets/MKG-Y-tuning`.
