@@ -1,4 +1,4 @@
-name: momokt
+name: comu
 channels:
   - pytorch
   - dglteam/label/th24_cu121
@@ -216,4 +216,4 @@ dependencies:
       - typing-extensions==4.12.2
       - wandb==0.18.7
       - yarl==1.18.3
-prefix: /home/icdm/miniconda3/envs/momokt
+prefix: /home/icdm/miniconda3/envs/comu
