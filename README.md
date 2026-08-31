@@ -1,8 +1,24 @@
 # CoMu
 
-This repo provides the main experiment code and tuning datasets used in our CoMu experiments.
+Official implementation of **CoMu**, a counterfactual-based multimodal fusion framework for multimodal knowledge graph completion.
 
-# Code Structure
+## Overview
+
+<p align="center">
+  <a href="./figures/comu_framework.pdf">
+    <img src="./figures/comu_framework.png" alt="The overall framework of CoMu" width="100%">
+  </a>
+</p>
+
+CoMu contains three main components:
+
+1. **Prompt-guided Modality Completion (PMC)** completes missing textual and visual information and aligns multimodal entity features.
+2. **Counterfactual-based Modality Fusion (CMF)** estimates modality-level causal contributions through counterfactual interventions and performs causal-aware fusion.
+3. **Consistency-aware Causal Regularization (CCR)** preserves global and local semantic consistency during causal-aware fusion.
+
+Click the framework figure to open its vector PDF version.
+
+## Code Structure
 ```sh
 CoMu
 ├─ datasets
@@ -26,21 +42,21 @@ CoMu
 └─ train.py
 ```
 
-# Data
+## Data
 Please download the structural data and multimodal features from:
 [Google Drive](https://drive.google.com/drive/folders/1mjQbTu9Yse9i60sXddhH8ONt3GDH_wbJ?usp=sharing)
 
 After downloading, place them in:
 `datasets/DB15K-tuning`, `datasets/MKG-W-tuning`, and `datasets/MKG-Y-tuning`.
 
-# Dependency
+## Dependency
 Create the environment from the project directory:
 ```sh
 conda env create -f CoMu.yml -n CoMu
 conda activate CoMu
 ```
 
-# Train
+## Train
 Run the main experiments:
 ```sh
 bash run.sh
